@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = D2AAC07D0554694100DB518D /* zbar */;
+		codeSenseManager = 6B513545120221C7004C9C79 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					890,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					904,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 302200023;
+			PBXWorkspaceStateSaveDate = 302200023;
+		};
+		perUserProjectItems = {
+			6B51376012032EBE004C9C79 /* PBXTextBookmark */ = 6B51376012032EBE004C9C79 /* PBXTextBookmark */;
+			6B51376612032EBE004C9C79 /* PBXTextBookmark */ = 6B51376612032EBE004C9C79 /* PBXTextBookmark */;
+			6B51378612032F8F004C9C79 /* PBXTextBookmark */ = 6B51378612032F8F004C9C79 /* PBXTextBookmark */;
+			6B513882120369C1004C9C79 /* PBXTextBookmark */ = 6B513882120369C1004C9C79 /* PBXTextBookmark */;
+			6B513883120369C1004C9C79 /* PBXTextBookmark */ = 6B513883120369C1004C9C79 /* PBXTextBookmark */;
+			6B513884120369C1004C9C79 /* PBXTextBookmark */ = 6B513884120369C1004C9C79 /* PBXTextBookmark */;
+			6B513885120369C1004C9C79 /* PBXTextBookmark */ = 6B513885120369C1004C9C79 /* PBXTextBookmark */;
+			6B513886120369C1004C9C79 /* PBXTextBookmark */ = 6B513886120369C1004C9C79 /* PBXTextBookmark */;
+			6B513887120369C1004C9C79 /* PBXTextBookmark */ = 6B513887120369C1004C9C79 /* PBXTextBookmark */;
+			6B513888120369C1004C9C79 /* PBXTextBookmark */ = 6B513888120369C1004C9C79 /* PBXTextBookmark */;
+			6B513889120369C1004C9C79 /* PBXTextBookmark */ = 6B513889120369C1004C9C79 /* PBXTextBookmark */;
+			6B51388A120369C1004C9C79 /* PBXTextBookmark */ = 6B51388A120369C1004C9C79 /* PBXTextBookmark */;
+			6B51388B120369C1004C9C79 /* PBXTextBookmark */ = 6B51388B120369C1004C9C79 /* PBXTextBookmark */;
+			6B51388C120369C1004C9C79 /* PBXTextBookmark */ = 6B51388C120369C1004C9C79 /* PBXTextBookmark */;
+			6B51388D120369C1004C9C79 /* PBXTextBookmark */ = 6B51388D120369C1004C9C79 /* PBXTextBookmark */;
+			6B51388E120369C1004C9C79 /* PBXTextBookmark */ = 6B51388E120369C1004C9C79 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 6B513544120221C7004C9C79 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6B513544120221C7004C9C79 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	6B513545120221C7004C9C79 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6B51376012032EBE004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC67C11A10A07A950033B702 /* ZBarSymbol.h */;
+		name = "ZBarSymbol.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	6B51376612032EBE004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC4920F110A7048C000E4D43 /* ZBarImageScanner.h */;
+		name = "ZBarImageScanner.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1462;
+		vrLoc = 0;
+	};
+	6B51378612032F8F004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC4920F010A7048C000E4D43 /* ZBarImage.h */;
+		name = "ZBarImage.h: 14";
+		rLen = 0;
+		rLoc = 711;
+		rType = 0;
+		vrLen = 1122;
+		vrLoc = 1192;
+	};
+	6B513882120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC3CE47711FA1622008FAF88 /* ZBarReaderViewImpl_Simulator.m */;
+		name = "ZBarReaderViewImpl_Simulator.m: 161";
+		rLen = 9;
+		rLoc = 3953;
+		rType = 0;
+		vrLen = 1226;
+		vrLoc = 3440;
+	};
+	6B513883120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC3EBB2C119DDB2100107EE9 /* ZBarReaderViewController.m */;
+		name = "ZBarReaderViewController.m: 8";
+		rLen = 0;
+		rLoc = 368;
+		rType = 0;
+		vrLen = 1044;
+		vrLoc = 4412;
+	};
+	6B513884120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC67C1BF10A07B6B0033B702 /* ZBarReaderController.m */;
+		name = "ZBarReaderController.m: 431";
+		rLen = 0;
+		rLoc = 12402;
+		rType = 0;
+		vrLen = 1328;
+		vrLoc = 346;
+	};
+	6B513885120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC67C11910A07A950033B702 /* ZBarReaderController.h */;
+		name = "ZBarReaderController.h: 87";
+		rLen = 6;
+		rLoc = 3033;
+		rType = 0;
+		vrLen = 1304;
+		vrLoc = 735;
+	};
+	6B513886120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DCDC713611B1628200021380 /* ZBarReaderViewController.h */;
+		name = "ZBarReaderViewController.h: 39";
+		rLen = 14;
+		rLoc = 1594;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 730;
+	};
+	6B513887120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC26004D118631E000FA987B /* ZBarCaptureReader.h */;
+		name = "ZBarCaptureReader.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 1770;
+	};
+	6B513888120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DCDC6E3811ADCB7700021380 /* ZBarReaderView.h */;
+		name = "ZBarReaderView.h: 35";
+		rLen = 134;
+		rLoc = 1332;
+		rType = 0;
+		vrLen = 1168;
+		vrLoc = 802;
+	};
+	6B513889120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC67C1C010A07B6B0033B702 /* ZBarSymbol.m */;
+		name = "ZBarSymbol.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1455;
+		vrLoc = 0;
+	};
+	6B51388A120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC67C1BD10A07B6B0033B702 /* ZBarHelpController.h */;
+		name = "ZBarHelpController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1464;
+		vrLoc = 0;
+	};
+	6B51388B120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC3AAB4D11B71A040021C7B1 /* ZBarCVImage.m */;
+		name = "ZBarCVImage.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1436;
+		vrLoc = 0;
+	};
+	6B51388C120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC26004B118631C200FA987B /* ZBarCaptureReader.m */;
+		name = "ZBarCaptureReader.m: 287";
+		rLen = 15;
+		rLoc = 8018;
+		rType = 0;
+		vrLen = 1302;
+		vrLoc = 6899;
+	};
+	6B51388D120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DCDC6E2F11ADCA8E00021380 /* ZBarReaderView.m */;
+		name = "ZBarReaderView.m: 386";
+		rLen = 0;
+		rLoc = 10843;
+		rType = 0;
+		vrLen = 1184;
+		vrLoc = 9715;
+	};
+	6B51388E120369C1004C9C79 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DCDC6E2F11ADCA8E00021380 /* ZBarReaderView.m */;
+		name = "ZBarReaderView.m: 398";
+		rLen = 0;
+		rLoc = 11141;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 9306;
+	};
+	D2AAC07D0554694100DB518D /* zbar */ = {
+		activeExec = 0;
+	};
+	DC26004B118631C200FA987B /* ZBarCaptureReader.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 4225}}";
+			sepNavSelRange = "{8018, 15}";
+			sepNavVisRange = "{6899, 1302}";
+		};
+	};
+	DC26004D118631E000FA987B /* ZBarCaptureReader.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 1287}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1770, 988}";
+		};
+	};
+	DC3AAB4D11B71A040021C7B1 /* ZBarCVImage.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 2444}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1436}";
+		};
+	};
+	DC3CE47611FA1622008FAF88 /* ZBarReaderViewImpl_Capture.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 4407}}";
+			sepNavSelRange = "{254, 15}";
+			sepNavVisRange = "{0, 487}";
+		};
+	};
+	DC3CE47711FA1622008FAF88 /* ZBarReaderViewImpl_Simulator.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 2340}}";
+			sepNavSelRange = "{4589, 14}";
+			sepNavVisRange = "{4167, 528}";
+		};
+	};
+	DC3EBB2C119DDB2100107EE9 /* ZBarReaderViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 4758}}";
+			sepNavSelRange = "{9192, 14}";
+			sepNavVisRange = "{8958, 654}";
+		};
+	};
+	DC4920ED10A70475000E4D43 /* ZBarImageScanner.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 1118}}";
+			sepNavSelRange = "{2194, 9}";
+			sepNavVisRange = "{1723, 566}";
+		};
+	};
+	DC4920F010A7048C000E4D43 /* ZBarImage.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 910}}";
+			sepNavSelRange = "{711, 0}";
+			sepNavVisRange = "{1192, 1122}";
+		};
+	};
+	DC4920F110A7048C000E4D43 /* ZBarImageScanner.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 663}}";
+			sepNavSelRange = "{1227, 16}";
+			sepNavVisRange = "{1126, 552}";
+		};
+	};
+	DC67C11710A07A810033B702 /* zbar.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 18278}}";
+			sepNavSelRange = "{3683, 12}";
+			sepNavVisRange = "{3078, 1241}";
+		};
+	};
+	DC67C11910A07A950033B702 /* ZBarReaderController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 1950}}";
+			sepNavSelRange = "{3033, 6}";
+			sepNavVisRange = "{735, 1304}";
+		};
+	};
+	DC67C11A10A07A950033B702 /* ZBarSymbol.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1558, 884}}";
+			sepNavSelRange = "{1569, 0}";
+			sepNavVisRange = "{934, 1303}";
+			sepNavWindowFrame = "{{226, 86}, {1617, 778}}";
+		};
+	};
+	DC67C13510A07AD30033B702 /* image.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 4342}}";
+			sepNavSelRange = "{5527, 6}";
+			sepNavVisRange = "{5193, 679}";
+		};
+	};
+	DC67C14D10A07AD30033B702 /* qrdec.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 51779}}";
+			sepNavSelRange = "{44070, 4}";
+			sepNavVisRange = "{43639, 690}";
+		};
+	};
+	DC67C15410A07AD30033B702 /* qrcode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 871}}";
+			sepNavSelRange = "{556, 4}";
+			sepNavVisRange = "{0, 976}";
+		};
+	};
+	DC67C15610A07AD30033B702 /* refcnt.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 1105}}";
+			sepNavSelRange = "{1522, 6}";
+			sepNavVisRange = "{1233, 573}";
+		};
+	};
+	DC67C15A10A07AD30033B702 /* symbol.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 3939}}";
+			sepNavSelRange = "{7764, 6}";
+			sepNavVisRange = "{7483, 498}";
+		};
+	};
+	DC67C1BD10A07B6B0033B702 /* ZBarHelpController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 572}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1464}";
+		};
+	};
+	DC67C1BF10A07B6B0033B702 /* ZBarReaderController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 9724}}";
+			sepNavSelRange = "{13161, 8}";
+			sepNavVisRange = "{11978, 814}";
+		};
+	};
+	DC67C1C010A07B6B0033B702 /* ZBarSymbol.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 2197}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1455}";
+		};
+	};
+	DCDC6E2F11ADCA8E00021380 /* ZBarReaderView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 5148}}";
+			sepNavSelRange = "{11141, 0}";
+			sepNavVisRange = "{9306, 1408}";
+		};
+	};
+	DCDC6E3811ADCB7700021380 /* ZBarReaderView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 1547}}";
+			sepNavSelRange = "{1387, 14}";
+			sepNavVisRange = "{1139, 632}";
+			sepNavWindowFrame = "{{249, 65}, {1617, 778}}";
+		};
+	};
+	DCDC713611B1628200021380 /* ZBarReaderViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 1352}}";
+			sepNavSelRange = "{1594, 14}";
+			sepNavVisRange = "{730, 1291}";
+		};
+	};
+}

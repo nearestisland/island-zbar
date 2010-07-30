@@ -1,0 +1,612 @@
+Treadertest
+v7
+r0
+t302128702.344515
+cCheck dependencies
+cCpResource build/Debug-iphoneos/readertest.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/Info.plist readertest.plist
+cCopyPNGFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-helpicons.png ../../iphone/res/zbar-helpicons.png
+cCopyPlistFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/entitlements.plist entitlements.plist
+cCpResource build/Debug-iphoneos/readertest.app/zbar-help.html ../../iphone/res/zbar-help.html
+cCopyPNGFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/back.png ../../iphone/res/back.png
+cCopyPNGFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-samples.png ../../iphone/res/zbar-samples.png
+cProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gekkbkubctdidkexkaecqtwwbksl/prefix.pch.gch prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gjdwjjfaagzfhchjtamhqmiszvug/prefix.pch.gch prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-eaprvmwkmnyvetczzfwcuhikjzdo/prefix.pch.pth prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-ekbodbkxcyfrfkhdegzmwhzgoajl/prefix.pch.pth prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cCompileC build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest normal armv7
+cLd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest normal armv6
+cAnalyze /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+cCreateUniversalBinary /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest normal "armv6 armv7"
+cAnalyze /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+cGenerateDSYMFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app.dSYM /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest
+cProcessProductPackaging "/Users/justinvaneaton/Library/MobileDevice/Provisioning Profiles/D83C7F47-F64E-4762-9C9B-3B6F1AAB45FA.mobileprovision" /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/embedded.mobileprovision
+cTouch /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent
+cCodeSign /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
+c000000004C05C1B10000000000000110
+t1275445681
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
+c000000004BF4B7F900000000000001A7
+t1274329081
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+c000000004BF4B7F900000000000001E5
+t1274329081
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004C0473C400000000001AA470
+t1275360196
+s1746032
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFE06FA000000000034A850
+t1274939130
+s3450960
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004C04586000000000000D6920
+t1275353184
+s878880
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004BFE08A7000000000002ECC0
+t1274939559
+s191680
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFE07D200000000003E1EB0
+t1274939346
+s4071088
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFE07B10000000000001466
+t1274939313
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004C045AEF0000000000253180
+t1275353839
+s2437504
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C04711400000000000009CD
+t1275359508
+s2509
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471FC0000000002D563E0
+t1275359740
+s47539168
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/assert.h
+c000000004BF75A3C0000000000000DCB
+t1274501692
+s3531
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/stdio.h
+c000000004BF75A3D00000000000040AC
+t1274501693
+s16556
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/stdlib.h
+c000000004BF75A3D0000000000002DF5
+t1274501693
+s11765
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/lib/libiconv.dylib
+c000000004BFDF30800000000001FB100
+t1274934024
+s2076928
+
+N/Users/justinvaneaton/Library/MobileDevice/Provisioning Profiles/D83C7F47-F64E-4762-9C9B-3B6F1AAB45FA.mobileprovision
+c000000004C33B0910000000000001C9C
+t1278455953
+s7324
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar.h
+c000000004C51E5E5000000000000C73F
+t1280435685
+s51007
+i"zbar/Exception.h"
+i"zbar/Decoder.h"
+i"zbar/Scanner.h"
+i"zbar/Symbol.h"
+i"zbar/Image.h"
+i"zbar/ImageScanner.h"
+i"zbar/Video.h"
+i"zbar/Window.h"
+i"zbar/Processor.h"
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Decoder.h
+c000000004C51E5E50000000000001614
+t1280435685
+s5652
+i<string>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Exception.h
+c000000004C51E5E50000000000001210
+t1280435685
+s4624
+i<exception>
+i<new>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Image.h
+c000000004C51E5E600000000000021B5
+t1280435686
+s8629
+i<assert.h>
+i<iterator>
+i"Symbol.h"
+i"Exception.h"
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ImageScanner.h
+c000000004C51E5E60000000000000EAB
+t1280435686
+s3755
+i"Image.h"
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Processor.h
+c000000004C51E5E60000000000001B3B
+t1280435686
+s6971
+i"Exception.h"
+i"Image.h"
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Scanner.h
+c000000004C51E5E60000000000001065
+t1280435686
+s4197
+i<stdio.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Symbol.h
+c000000004C51E5E60000000000003086
+t1280435686
+s12422
+i<stdlib.h>
+i<string>
+i<ostream>
+i<assert.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Video.h
+c000000004C51E5E6000000000000115D
+t1280435686
+s4445
+i"Image.h"
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/Window.h
+c000000004C51E5E60000000000000E9D
+t1280435686
+s3741
+i"Image.h"
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ZBarImage.h
+c000000004C51E5E6000000000000090A
+t1280435686
+s2314
+i<zbar.h>
+i<zbar/ZBarSymbol.h>
+i<UIKit/UIKit.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ZBarImageScanner.h
+c000000004C51E5E6000000000000068E
+t1280435686
+s1678
+i<zbar.h>
+i<zbar/ZBarImage.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ZBarReaderController.h
+c000000004C51E5E600000000000014A5
+t1280435686
+s5285
+i<zbar.h>
+i<UIKit/UIKit.h>
+i<zbar/ZBarImageScanner.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ZBarReaderView.h
+c000000004C51E5E60000000000000F4A
+t1280435686
+s3914
+i<UIKit/UIKit.h>
+i<zbar/ZBarImageScanner.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ZBarReaderViewController.h
+c000000004C51E5E60000000000000F95
+t1280435686
+s3989
+i<zbar/ZBarReaderController.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/include/zbar/ZBarSymbol.h
+c000000004C51E5E600000000000008BD
+t1280435686
+s2237
+i<zbar.h>
+i<Foundation/Foundation.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/iphone/build/Debug-iphoneos/libzbar.a
+c000000004C51E6B800000000001CDEF0
+t1280435896
+s1892080
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/back.png
+c000000004C51E5E6000000000000013F
+t1280435686
+s319
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-help.html
+c000000004C51E5E60000000000000C5E
+t1280435686
+s3166
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-helpicons.png
+c000000004C51E5E600000000000047AE
+t1280435686
+s18350
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-samples.png
+c000000004C51E5E6000000000000049D
+t1280435686
+s1181
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+t1280435902
+s476
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app.dSYM
+t1280435900
+s102
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/Info.plist
+t1280435896
+s719
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/PkgInfo
+t1280435896
+s8
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/ResourceRules.plist
+t1280435896
+s485
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/back.png
+t1280435897
+s319
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/embedded.mobileprovision
+t1280435901
+s7324
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/entitlements.plist
+t1280435897
+s62
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest
+t1280435900
+s736232
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-help.html
+t1280435897
+s3166
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-helpicons.png
+t1280435897
+s23139
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-samples.png
+t1280435897
+s1468
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest
+t1280435900
+s381388
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.LinkFileList
+c000000004C51E6B80000000000000094
+t1280435896
+s148
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.o
+t1280435900
+s124608
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest
+t1280435900
+s347112
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.LinkFileList
+c000000004C51E6B80000000000000094
+t1280435896
+s148
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.o
+t1280435900
+s122120
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/StaticAnalyzer/normal/armv6/readertest.plist
+t1280435900
+s276
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/StaticAnalyzer/normal/armv7/readertest.plist
+t1280435900
+s276
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent
+t1280435901
+s446
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/entitlements.plist
+c000000004C51E5E600000000000000E1
+t1280435686
+s225
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch
+c000000004C51E5E60000000000000065
+t1280435686
+s101
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<zbar.h>
+
+N/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+c000000004C51E5E60000000000005CCD
+t1280435686
+s23757
+i<zbar/ZBarReaderViewController.h>
+i<zbar/ZBarReaderView.h>
+
+N/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-eaprvmwkmnyvetczzfwcuhikjzdo/prefix.pch.pth
+t1280435899
+s2701288
+
+N/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-ekbodbkxcyfrfkhdegzmwhzgoajl/prefix.pch.pth
+t1280435899
+s2701460
+
+N/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gekkbkubctdidkexkaecqtwwbksl/prefix.pch.gch
+t1280435898
+s10049100
+
+N/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gjdwjjfaagzfhchjtamhqmiszvug/prefix.pch.gch
+t1280435899
+s10507852
+
+Nreadertest.plist
+c000000004C51E5E60000000000000349
+t1280435686
+s841
+
+CAnalyze /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+s302128700.726330
+e302128700.865712
+r1
+xAnalyze
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+lSLF07#2@79"Analyze /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m302128700#302128700#0(0"0(0#0#71"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m8632468864#2041"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv7 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -include /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-ekbodbkxcyfrfkhdegzmwhzgoajl/prefix.pch --analyze /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/StaticAnalyzer/normal/armv7/readertest.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies302128696#302128696#0(0"0(0#1#0"8641671872#0"0#
+
+CCodeSign /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+s302128701.166969
+e302128702.344464
+r1
+xCodeSign
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+lSLF07#2@44"CodeSign build/Debug-iphoneos/readertest.app302128701#302128702#0(0"0(0#0#94"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app8640945248#747"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Justin Van Eaton (42BGCL47S8)" --resource-rules=/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/ResourceRules.plist --entitlements /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app0#
+
+CCompileC build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s302128699.806269
+e302128700.124019
+r1
+xCompileC
+xbuild/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.o
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m302128699#302128700#0(0"0(0#0#71"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m8634468384#2012"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv6 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -include /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gekkbkubctdidkexkaecqtwwbksl/prefix.pch -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.o0#
+
+CCompileC build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s302128699.807503
+e302128700.086736
+r1
+xCompileC
+xbuild/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.o
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m302128699#302128700#0(0"0(0#0#71"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m8634032032#2012"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv7 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -include /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gjdwjjfaagzfhchjtamhqmiszvug/prefix.pch -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.m -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.o0#
+
+CCopyPNGFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/back.png ../../iphone/res/back.png
+s302128697.628708
+e302128697.862381
+r1
+xCopyPNGFile
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/back.png
+x../../iphone/res/back.png
+olibpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.
+lSLF07#2@82"CopyPNGFile build/Debug-iphoneos/readertest.app/back.png ../../iphone/res/back.png302128697#302128697#0(143"libpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.0(0#0#84"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/back.png8637317120#636"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/back.png /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/back.png0#
+
+CCopyPNGFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-helpicons.png ../../iphone/res/zbar-helpicons.png
+s302128696.803108
+e302128698.193445
+r1
+xCopyPNGFile
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-helpicons.png
+x../../iphone/res/zbar-helpicons.png
+lSLF07#2@102"CopyPNGFile build/Debug-iphoneos/readertest.app/zbar-helpicons.png ../../iphone/res/zbar-helpicons.png302128696#302128698#0(0"0(0#0#94"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-helpicons.png8615285888#656"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-helpicons.png /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-helpicons.png0#
+
+CCopyPNGFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-samples.png ../../iphone/res/zbar-samples.png
+s302128697.862492
+e302128697.926242
+r1
+xCopyPNGFile
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-samples.png
+x../../iphone/res/zbar-samples.png
+lSLF07#2@98"CopyPNGFile build/Debug-iphoneos/readertest.app/zbar-samples.png ../../iphone/res/zbar-samples.png302128697#302128697#0(0"0(0#0#92"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-samples.png8642050336#652"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-samples.png /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/zbar-samples.png0#
+
+CCopyPlistFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/entitlements.plist entitlements.plist
+s302128696.804010
+e302128697.627114
+r1
+xCopyPlistFile
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/entitlements.plist
+xentitlements.plist
+lSLF07#2@23"Copy entitlements.plist302128696#302128697#0(0"0(0#0#77"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/entitlements.plist8590162144#422"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 entitlements.plist --outdir /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app0#
+
+CCpResource build/Debug-iphoneos/readertest.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+s302128696.667522
+e302128696.803002
+r1
+xCpResource
+xbuild/Debug-iphoneos/readertest.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist302128696#302128696#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist8632723328#523"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app0#
+
+CCpResource build/Debug-iphoneos/readertest.app/zbar-help.html ../../iphone/res/zbar-help.html
+s302128697.627427
+e302128697.635163
+r1
+xCpResource
+xbuild/Debug-iphoneos/readertest.app/zbar-help.html
+x../../iphone/res/zbar-help.html
+lSLF07#2@36"Copy ../../iphone/res/zbar-help.html302128697#302128697#0(0"0(0#0#90"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-help.html8633904384#524"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/../../iphone/res/zbar-help.html /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app0#
+
+CCreateUniversalBinary /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest normal "armv6 armv7"
+s302128700.615635
+e302128700.726179
+r1
+xCreateUniversalBinary
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest
+xnormal
+xarmv6 armv7
+lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/readertest.app/readertest normal "armv6 armv7"302128700#302128700#0(0"0(0#0#70"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/armv6 armv78634114400#622"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest -output /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest0#
+
+CGenerateDSYMFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app.dSYM /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest
+s302128700.807465
+e302128701.008161
+r1
+xGenerateDSYMFile
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app.dSYM
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest
+lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/readertest.app.dSYM build/Debug-iphoneos/readertest.app/readertest302128700#302128701#0(0"0(0#0#105"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest8628814752#431"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/readertest -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app.dSYM0#
+
+CLd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest normal armv6
+s302128700.124116
+e302128700.615519
+r1
+xLd
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest
+xnormal
+xarmv6
+lSLF07#2@150"Link /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest302128700#302128700#0(0"0(0#0#0"8602869600#1177"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -L/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -filelist /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest.LinkFileList -dead_strip -miphoneos-version-min=3.1.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -liconv /Users/justinvaneaton/maven/iphone-client/zbar/iphone/build/Debug-iphoneos/libzbar.a -weak_framework CoreVideo -weak_framework CoreMedia -weak_framework AVFoundation -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv6/readertest0#
+
+CLd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest normal armv7
+s302128700.086835
+e302128700.586155
+r1
+xLd
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest
+xnormal
+xarmv7
+lSLF07#2@150"Link /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest302128700#302128700#0(0"0(0#0#0"8639455168#1177"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -L/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -filelist /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest.LinkFileList -dead_strip -miphoneos-version-min=3.1.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -liconv /Users/justinvaneaton/maven/iphone-client/zbar/iphone/build/Debug-iphoneos/libzbar.a -weak_framework CoreVideo -weak_framework CoreMedia -weak_framework AVFoundation -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/Objects-normal/armv7/readertest0#
+
+CProcessInfoPlistFile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/Info.plist readertest.plist
+s302128696.668484
+e302128696.770677
+r1
+xProcessInfoPlistFile
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/Info.plist
+xreadertest.plist
+lSLF07#2@24"Process readertest.plist302128696#302128696#0(0"0(0#0#75"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/readertest.plist8631944160#649"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility readertest.plist -genpkginfo /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/ResourceRules.plist -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/Info.plist0#
+
+CProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-eaprvmwkmnyvetczzfwcuhikjzdo/prefix.pch.pth prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s302128698.957585
+e302128699.646531
+r1
+xProcessPCH
+x/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-eaprvmwkmnyvetczzfwcuhikjzdo/prefix.pch.pth
+xprefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@21"Precompile prefix.pch302128698#302128699#0(0"0(0#0#69"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch8639012352#1875"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv6 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch -o /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-eaprvmwkmnyvetczzfwcuhikjzdo/prefix.pch.pth0#
+
+CProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-ekbodbkxcyfrfkhdegzmwhzgoajl/prefix.pch.pth prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s302128699.421057
+e302128699.806037
+r1
+xProcessPCH
+x/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-ekbodbkxcyfrfkhdegzmwhzgoajl/prefix.pch.pth
+xprefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@21"Precompile prefix.pch302128699#302128699#0(0"0(0#0#69"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch8637669184#1875"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv7 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch -o /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-ekbodbkxcyfrfkhdegzmwhzgoajl/prefix.pch.pth0#
+
+CProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gekkbkubctdidkexkaecqtwwbksl/prefix.pch.gch prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s302128698.193607
+e302128698.957453
+r1
+xProcessPCH
+x/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gekkbkubctdidkexkaecqtwwbksl/prefix.pch.gch
+xprefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@21"Precompile prefix.pch302128698#302128698#0(0"0(0#0#69"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch8640894208#1864"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv6 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch -o /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gekkbkubctdidkexkaecqtwwbksl/prefix.pch.gch0#
+
+CProcessPCH /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gjdwjjfaagzfhchjtamhqmiszvug/prefix.pch.gch prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s302128698.194929
+e302128699.420810
+r1
+xProcessPCH
+x/var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gjdwjjfaagzfhchjtamhqmiszvug/prefix.pch.gch
+xprefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@21"Precompile prefix.pch302128698#302128699#0(0"0(0#0#69"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch8640083072#1864"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-generated-files.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-own-target-headers.hmap -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-all-target-headers.hmap -iquote /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest-project-headers.hmap -F/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/include -I../../include -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources/armv7 -I/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/DerivedSources -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/prefix.pch -o /var/folders/zB/zB6kw-DSEoCtwFB1NkAYp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/prefix-gjdwjjfaagzfhchjtamhqmiszvug/prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/justinvaneaton/Library/MobileDevice/Provisioning Profiles/D83C7F47-F64E-4762-9C9B-3B6F1AAB45FA.mobileprovision" /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/embedded.mobileprovision
+s302128701.008404
+e302128701.095608
+r1
+xProcessProductPackaging
+x/Users/justinvaneaton/Library/MobileDevice/Provisioning Profiles/D83C7F47-F64E-4762-9C9B-3B6F1AAB45FA.mobileprovision
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/embedded.mobileprovision
+lSLF07#2@204"ProcessProductPackaging "/Users/justinvaneaton/Library/MobileDevice/Provisioning Profiles/D83C7F47-F64E-4762-9C9B-3B6F1AAB45FA.mobileprovision" build/Debug-iphoneos/readertest.app/embedded.mobileprovision302128701#302128701#0(0"0(0#0#119"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/embedded.mobileprovision8629889472#475"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/justinvaneaton/Library/MobileDevice/Provisioning Profiles/D83C7F47-F64E-4762-9C9B-3B6F1AAB45FA.mobileprovision" -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent
+s302128701.104148
+e302128701.166843
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent
+lSLF07#2@184"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent302128701#302128701#0(0"0(0#0#130"/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent8642059072#481"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/readertest.build/Debug-iphoneos/readertest.build/readertest.xcent0#
+
+CTouch /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+s302128701.095702
+e302128701.104011
+r1
+xTouch
+x/Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app
+lSLF07#2@100"Touch /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app302128701#302128701#0(0"0(0#0#0"8641681600#307"    cd /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/justinvaneaton/maven/iphone-client/zbar/test/iphone/build/Debug-iphoneos/readertest.app0#
+
