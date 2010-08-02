@@ -314,9 +314,11 @@
         return;
 
     CGRect r = sym.bounds;
+	
     if(r.size.width <= 32 && r.size.height <= 32)
         return;
     r = CGRectInset(r, -24, -24);
+	
 
     CALayer *current = trk.presentationLayer;
     CGPoint cp = current.position;
@@ -327,6 +329,15 @@
     r.origin = cr.origin;
     r.size.width = (r.size.width * 3 + cr.size.width) / 4;
     r.size.height = (r.size.height * 3 + cr.size.height) / 4;
+	
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"gotTracking" object:self 
+													  userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+																[NSNumber numberWithFloat:p.y], @"x",
+																[NSNumber numberWithFloat:p.x], @"y",
+																[NSNumber numberWithFloat:r.size.height], @"width",
+																[NSNumber numberWithFloat:r.size.width], @"height",
+																sym, @"symbol", nil]];
 
     CAMediaTimingFunction *linear =
         [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionLinear];
@@ -351,8 +362,8 @@
 
     CABasicAnimation *on =
         [CABasicAnimation animationWithKeyPath: @"opacity"];
-    on.fromValue = [NSNumber numberWithDouble: current.opacity];
-    on.toValue = [NSNumber numberWithDouble: 1];
+    on.fromValue = [NSNumber numberWithDouble: 0];
+    on.toValue = [NSNumber numberWithDouble: 0];
     on.duration = .2;
     on.timingFunction = linear;
     on.fillMode = kCAFillModeForwards;
@@ -361,7 +372,7 @@
     CABasicAnimation *off = nil;
     if(!TARGET_IPHONE_SIMULATOR) {
         off = [CABasicAnimation animationWithKeyPath: @"opacity"];
-        off.fromValue = [NSNumber numberWithDouble: 1];
+        off.fromValue = [NSNumber numberWithDouble: 0];
         off.toValue = [NSNumber numberWithDouble: 0];
         off.beginTime = .5;
         off.duration = .5;
@@ -395,7 +406,6 @@
     if(!sym)
         return;
 	
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"gotTracking" object:self];
     [self updateTracking: tracking
           withSymbol: sym];
 }
