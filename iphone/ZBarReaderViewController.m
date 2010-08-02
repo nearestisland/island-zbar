@@ -108,7 +108,7 @@
 	
 	int bHeight = 40;
 	int bWidth = 100;
-	int bInset = 10;
+	int bInset = 20;
 	float bTop = self.view.frame.size.height - bInset - bHeight;
 	
 	controls = [[[UIView alloc] initWithFrame:CGRectMake(bInset, bTop, self.view.frame.size.width - 2 * bInset, bHeight)] autorelease];
