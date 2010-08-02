@@ -24,6 +24,7 @@
 #import <zbar/ZBarReaderViewController.h>
 #import <zbar/ZBarReaderView.h>
 #import "ZBarHelpController.h"
+#import <AVFoundation/AVFoundation.h>
 
 #define MODULE ZBarReaderViewController
 #import "debug.h"
@@ -104,7 +105,43 @@
     }
     if(!showsZBarControls || controls)
         return;
+	
+	int bHeight = 40;
+	int bWidth = 100;
+	int bInset = 10;
+	float bTop = self.view.frame.size.height - bInset - bHeight;
+	
+	controls = [[[UIView alloc] initWithFrame:CGRectMake(bInset, bTop, self.view.frame.size.width - 2 * bInset, bHeight)] autorelease];
+	controls.backgroundColor = [UIColor clearColor];
+	
+	UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	[cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+	cancelButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+	cancelButton.titleLabel.backgroundColor = [UIColor clearColor];
+	cancelButton.alpha = 0.4;
+	[cancelButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchDown];
+	cancelButton.frame = CGRectMake(0, 0, bWidth, bHeight);
+	[controls addSubview:cancelButton];
+	
+	AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+	
+	if ([device hasTorch] && [device hasFlash])
+	{
+		UIButton *torchButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+		[torchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[torchButton setTitle:@"Light" forState:UIControlStateNormal];
+		torchButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+		torchButton.titleLabel.backgroundColor = [UIColor clearColor];
+		torchButton.alpha = 0.4;
+		[torchButton addTarget:self action:@selector(toggleLight:) forControlEvents:UIControlEventTouchDown];
+		torchButton.frame = CGRectMake(controls.frame.size.width - bWidth, 0, bWidth, bHeight);
+		[controls addSubview:torchButton];
+	}
+	
+	[self.view addSubview:controls];
 
+/*	
     UIView *view = self.view;
     CGRect r = view.bounds;
     r.origin.y = r.size.height - 54;
@@ -112,6 +149,7 @@
     controls = [[UIView alloc]
                    initWithFrame: r];
     controls.backgroundColor = [UIColor blackColor];
+
 
     UIToolbar *toolbar =
         [UIToolbar new];
@@ -146,6 +184,7 @@
     [controls addSubview: info];
 
     [self.view addSubview: controls];
+*/
 }
 
 - (void) initSimulator
