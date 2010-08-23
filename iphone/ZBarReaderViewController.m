@@ -32,9 +32,9 @@
 @implementation ZBarReaderViewController
 
 @synthesize scanner, readerDelegate, showsZBarControls, tracksSymbols,
-    enableCache, cameraOverlayView, cameraViewTransform, readerView, scanCrop;
+enableCache, cameraOverlayView, cameraViewTransform, readerView, scanCrop;
 @dynamic sourceType, allowsEditing, allowsImageEditing, showsCameraControls,
-    showsHelpOnFail, cameraMode, takesPicture, maxScanDimension;
+showsHelpOnFail, cameraMode, takesPicture, maxScanDimension;
 
 + (BOOL) isSourceTypeAvailable: (UIImagePickerControllerSourceType) sourceType
 {
@@ -49,31 +49,31 @@
     if(!TARGET_IPHONE_SIMULATOR &&
        !NSClassFromString(@"AVCaptureSession")) {
         // fallback to old interface
-        zlog(@"Falling back to ZBarReaderController");
-        [self release];
-        return([ZBarReaderController new]);
+        //zlog(@"Falling back to ZBarReaderController");
+        //[self release];
+        //return([ZBarReaderController new]);
     }
-
+	
     self = [super init];
     if(!self)
         return(nil);
-
+	
     self.wantsFullScreenLayout = YES;
-
+	
     showsZBarControls = tracksSymbols = enableCache = YES;
     scanCrop = CGRectMake(0, 0, 1, 1);
     cameraViewTransform = CGAffineTransformIdentity;
-
+	
     // create our own scanner to store configuration,
     // independent of whether view is loaded
     scanner = [ZBarImageScanner new];
     [scanner setSymbology: 0
-             config: ZBAR_CFG_X_DENSITY
-             to: 3];
+				   config: ZBAR_CFG_X_DENSITY
+					   to: 3];
     [scanner setSymbology: 0
-             config: ZBAR_CFG_Y_DENSITY
-             to: 3];
-
+				   config: ZBAR_CFG_Y_DENSITY
+					   to: 3];
+	
     return(self);
 }
 
@@ -123,7 +123,7 @@
 	[cancelButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchDown];
 	cancelButton.frame = CGRectMake(0, 0, bWidth, bHeight);
 	[controls addSubview:cancelButton];
-
+	
 	// keyboard button
 	UIButton *keyboardButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[keyboardButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -135,76 +135,77 @@
 	keyboardButton.frame = CGRectMake(controls.frame.size.width - bWidth, 0, bWidth, bHeight);
 	[controls addSubview:keyboardButton];
 	
-	
-	AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-	
-	if ([device hasTorch] && [device hasFlash])
-	{
-		UIButton *torchButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//		[torchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//		[torchButton setTitle:@"Light" forState:UIControlStateNormal];
-		UIImage *icon = [UIImage imageNamed:@"61-brightness.png"];
-		NSLog(@"Icon Size:%f,%f", icon.size.width, icon.size.height);
-		[torchButton setImage:icon forState:UIControlStateNormal];
-//		torchButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
-//		torchButton.titleLabel.backgroundColor = [UIColor clearColor];
-		torchButton.alpha = 0.4;
-		[torchButton addTarget:self action:@selector(toggleLight:) forControlEvents:UIControlEventTouchDown];
-		float leftEdge = bWidth + bInset;
-		torchButton.frame = CGRectMake(leftEdge, cancelButton.frame.origin.y, 
-									   controls.frame.size.width - 2 * (bWidth + bInset), 
-										cancelButton.frame.size.height );
-		[controls addSubview:torchButton];
-	}
-	
+	if (NSClassFromString(@"AVCaptureSession")) {
+		
+		AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+		
+		if ([device hasTorch] && [device hasFlash])
+		{
+			UIButton *torchButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+			//		[torchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+			//		[torchButton setTitle:@"Light" forState:UIControlStateNormal];
+			UIImage *icon = [UIImage imageNamed:@"61-brightness.png"];
+			NSLog(@"Icon Size:%f,%f", icon.size.width, icon.size.height);
+			[torchButton setImage:icon forState:UIControlStateNormal];
+			//		torchButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+			//		torchButton.titleLabel.backgroundColor = [UIColor clearColor];
+			torchButton.alpha = 0.4;
+			[torchButton addTarget:self action:@selector(toggleLight:) forControlEvents:UIControlEventTouchDown];
+			float leftEdge = bWidth + bInset;
+			torchButton.frame = CGRectMake(leftEdge, cancelButton.frame.origin.y, 
+										   controls.frame.size.width - 2 * (bWidth + bInset), 
+										   cancelButton.frame.size.height );
+			[controls addSubview:torchButton];
+		}
+	}	
 	
 	
 	[self.view addSubview:controls];
-
-/*	
-    UIView *view = self.view;
-    CGRect r = view.bounds;
-    r.origin.y = r.size.height - 54;
-    r.size.height = 54;
-    controls = [[UIView alloc]
-                   initWithFrame: r];
-    controls.backgroundColor = [UIColor blackColor];
-
-
-    UIToolbar *toolbar =
-        [UIToolbar new];
-    r.origin.y = 0;
-    toolbar.frame = r;
-    toolbar.barStyle = UIBarStyleBlackOpaque;
-
-    toolbar.items =
-        [NSArray arrayWithObjects:
-            [[[UIBarButtonItem alloc]
-                 initWithBarButtonSystemItem: UIBarButtonSystemItemCancel
-                 target: self
-                 action: @selector(cancel)]
-                autorelease],
-            [[[UIBarButtonItem alloc]
-                 initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace
-                 target: nil
-                 action: nil]
-                autorelease],
-            nil];
-    [controls addSubview: toolbar];
-    [toolbar release];
-
-    UIButton *info =
-        [UIButton buttonWithType: UIButtonTypeInfoLight];
-    r.origin.x = r.size.width - 54;
-    r.size.width = 54;
-    info.frame = r;
-    [info addTarget: self
-             action: @selector(info)
-             forControlEvents: UIControlEventTouchUpInside];
-    [controls addSubview: info];
-
-    [self.view addSubview: controls];
-*/
+	
+	/*	
+	 UIView *view = self.view;
+	 CGRect r = view.bounds;
+	 r.origin.y = r.size.height - 54;
+	 r.size.height = 54;
+	 controls = [[UIView alloc]
+	 initWithFrame: r];
+	 controls.backgroundColor = [UIColor blackColor];
+	 
+	 
+	 UIToolbar *toolbar =
+	 [UIToolbar new];
+	 r.origin.y = 0;
+	 toolbar.frame = r;
+	 toolbar.barStyle = UIBarStyleBlackOpaque;
+	 
+	 toolbar.items =
+	 [NSArray arrayWithObjects:
+	 [[[UIBarButtonItem alloc]
+	 initWithBarButtonSystemItem: UIBarButtonSystemItemCancel
+	 target: self
+	 action: @selector(cancel)]
+	 autorelease],
+	 [[[UIBarButtonItem alloc]
+	 initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace
+	 target: nil
+	 action: nil]
+	 autorelease],
+	 nil];
+	 [controls addSubview: toolbar];
+	 [toolbar release];
+	 
+	 UIButton *info =
+	 [UIButton buttonWithType: UIButtonTypeInfoLight];
+	 r.origin.x = r.size.width - 54;
+	 r.size.width = 54;
+	 info.frame = r;
+	 [info addTarget: self
+	 action: @selector(info)
+	 forControlEvents: UIControlEventTouchUpInside];
+	 [controls addSubview: info];
+	 
+	 [self.view addSubview: controls];
+	 */
 }
 
 - (void) initSimulator
@@ -215,7 +216,7 @@
 - (void) loadView
 {
     self.view = [[UIView alloc]
-                    initWithFrame: CGRectMake(0, 0, 320, 480)];
+				 initWithFrame: CGRectMake(0, 0, 320, 480)];
 }
 
 - (void) viewDidLoad
@@ -223,19 +224,20 @@
     [super viewDidLoad];
     UIView *view = self.view;
     view.backgroundColor = [UIColor blackColor];
-
-    readerView = [[ZBarReaderView alloc]
-                     initWithImageScanner: scanner];
-    readerView.readerDelegate = (id<ZBarReaderViewDelegate>)self;
-    readerView.scanCrop = scanCrop;
-    readerView.previewTransform = cameraViewTransform;
-    readerView.tracksSymbols = tracksSymbols;
-    readerView.enableCache = enableCache;
-    [view addSubview: readerView];
-
+	
+	readerView = [[ZBarReaderView alloc]
+				  initWithImageScanner: scanner];
+	readerView.readerDelegate = (id<ZBarReaderViewDelegate>)self;
+	readerView.scanCrop = scanCrop;
+	readerView.previewTransform = cameraViewTransform;
+	readerView.tracksSymbols = tracksSymbols;
+	readerView.enableCache = enableCache;
+	[view addSubview: readerView];
+	
+	
     [self initControls];
     [self initSimulator];
-
+	
     if(cameraOverlayView) {
         assert(!cameraOverlayView.superview);
         [cameraOverlayView removeFromSuperview];
@@ -254,24 +256,24 @@
 {
     [self initControls];
     [super viewWillAppear: animated];
-
+	
     [readerView start];
-
+	
     UIApplication *app = [UIApplication sharedApplication];
     BOOL willHideStatusBar =
-        !didHideStatusBar && self.wantsFullScreenLayout && !app.statusBarHidden;
-    if(willHideStatusBar)
+	!didHideStatusBar && self.wantsFullScreenLayout && !app.statusBarHidden;
+    if(willHideStatusBar && NSClassFromString(@"AVCaptureSession"))
         [app setStatusBarHidden: YES
-             withAnimation: UIStatusBarAnimationFade];
+				  withAnimation: UIStatusBarAnimationFade];
     didHideStatusBar = didHideStatusBar || willHideStatusBar;
 }
 
 - (void) dismissModalViewControllerAnimated: (BOOL) animated
 {
-    if(didHideStatusBar) {
+    if(didHideStatusBar && NSClassFromString(@"AVCaptureSession")) {
         [[UIApplication sharedApplication]
-            setStatusBarHidden: NO
-            withAnimation: UIStatusBarAnimationFade];
+		 setStatusBarHidden: NO
+		 withAnimation: UIStatusBarAnimationFade];
         didHideStatusBar = NO;
     }
     [super dismissModalViewControllerAnimated: animated];
@@ -280,14 +282,14 @@
 - (void) viewWillDisappear: (BOOL) animated
 {
     [readerView stop];
-
-    if(didHideStatusBar) {
+	
+    if(didHideStatusBar && NSClassFromString(@"AVCaptureSession")) {
         [[UIApplication sharedApplication]
-            setStatusBarHidden: NO
-            withAnimation: UIStatusBarAnimationFade];
+		 setStatusBarHidden: NO
+		 withAnimation: UIStatusBarAnimationFade];
         didHideStatusBar = NO;
     }
-
+	
     [super viewWillDisappear: animated];
 }
 
@@ -324,11 +326,11 @@
 {
     UIView *oldview = cameraOverlayView;
     [oldview removeFromSuperview];
-
+	
     cameraOverlayView = [newview retain];
     if([self isViewLoaded] && newview)
         [self.view addSubview: newview];
-
+	
     [oldview release];
 }
 
@@ -346,7 +348,7 @@
     SEL cb = @selector(imagePickerControllerDidCancel:);
     if([readerDelegate respondsToSelector: cb])
         [readerDelegate
-            imagePickerControllerDidCancel: (UIImagePickerController*)self];
+		 imagePickerControllerDidCancel: (UIImagePickerController*)self];
     else
         [self dismissModalViewControllerAnimated: YES];
 }
@@ -359,15 +361,15 @@
 - (void) showHelpWithReason: (NSString*) reason
 {
     ZBarHelpController *help =
-        [[ZBarHelpController alloc]
-            initWithReason: reason];
+	[[ZBarHelpController alloc]
+	 initWithReason: reason];
     help.delegate = self;
     help.wantsFullScreenLayout = YES;
     UIView *helpView = help.view;
     helpView.alpha = 0;
     [self.view addSubview: helpView];
     [UIView beginAnimations: @"ZBarHelp"
-            context: nil];
+					context: nil];
     help.view.alpha = 1;
     [UIView commitAnimations];
 }
@@ -378,7 +380,7 @@
    clickedButtonAtIndex: (NSInteger) idx
 {
     [UIView beginAnimations: @"ZBarHelp"
-            context: help];
+					context: help];
     [UIView setAnimationDelegate: self];
     [UIView setAnimationDidStopSelector: @selector(removeHelp:done:context:)];
     help.view.alpha = 0;
@@ -386,8 +388,8 @@
 }
 
 - (void) removeHelp: (NSString*) id
-               done: (NSNumber*) done
-            context: (void*) ctx
+done: (NSNumber*) done
+context: (void*) ctx
 {
     if([id isEqualToString: @"ZBarHelp"]) {
         ZBarHelpController *help = ctx;
@@ -403,27 +405,27 @@
           fromImage: (UIImage*) image
 {
     [readerDelegate
-        imagePickerController: (UIImagePickerController*)self
-        didFinishPickingMediaWithInfo:
-            [NSDictionary dictionaryWithObjectsAndKeys:
-                image, UIImagePickerControllerOriginalImage,
-                syms, ZBarReaderControllerResults,
-                nil]];
+	 imagePickerController: (UIImagePickerController*)self
+	 didFinishPickingMediaWithInfo:
+	 [NSDictionary dictionaryWithObjectsAndKeys:
+	  image, UIImagePickerControllerOriginalImage,
+	  syms, ZBarReaderControllerResults,
+	  nil]];
 }
 
 // "deprecated" properties
 
 #define DEPRECATED_PROPERTY(getter, setter, type, val, ignore) \
-    - (type) getter                                    \
-    {                                                  \
-        return(val);                                   \
-    }                                                  \
-    - (void) setter: (type) v                          \
-    {                                                  \
-        NSAssert2(ignore || v == val,                  \
-                  @"attempt to set unsupported value (%d)" \
-                  @" for %@ property", val, @#getter); \
-    }
+- (type) getter                                    \
+{                                                  \
+return(val);                                   \
+}                                                  \
+- (void) setter: (type) v                          \
+{                                                  \
+NSAssert2(ignore || v == val,                  \
+@"attempt to set unsupported value (%d)" \
+@" for %@ property", val, @#getter); \
+}
 
 DEPRECATED_PROPERTY(sourceType, setSourceType, UIImagePickerControllerSourceType, UIImagePickerControllerSourceTypeCamera, NO)
 DEPRECATED_PROPERTY(allowsEditing, setAllowsEditing, BOOL, NO, NO)

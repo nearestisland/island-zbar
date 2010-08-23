@@ -33,6 +33,9 @@
     if(!self)
         return(nil);
 
+	if (!NSClassFromString(@"AVCaptureSession"))
+		return nil;
+		
     session = [AVCaptureSession new];
     NSNotificationCenter *notify =
         [NSNotificationCenter defaultCenter];
