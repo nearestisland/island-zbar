@@ -123,21 +123,41 @@
 	[cancelButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchDown];
 	cancelButton.frame = CGRectMake(0, 0, bWidth, bHeight);
 	[controls addSubview:cancelButton];
+
+	// keyboard button
+	UIButton *keyboardButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	[keyboardButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[keyboardButton setTitle:@"Keypad" forState:UIControlStateNormal];
+	keyboardButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+	keyboardButton.titleLabel.backgroundColor = [UIColor clearColor];
+	keyboardButton.alpha = 0.4;
+	[keyboardButton addTarget:self action:@selector(openKeyboard:) forControlEvents:UIControlEventTouchDown];
+	keyboardButton.frame = CGRectMake(controls.frame.size.width - bWidth, 0, bWidth, bHeight);
+	[controls addSubview:keyboardButton];
+	
 	
 	AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
 	
 	if ([device hasTorch] && [device hasFlash])
 	{
 		UIButton *torchButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		[torchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-		[torchButton setTitle:@"Light" forState:UIControlStateNormal];
-		torchButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
-		torchButton.titleLabel.backgroundColor = [UIColor clearColor];
+//		[torchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//		[torchButton setTitle:@"Light" forState:UIControlStateNormal];
+		UIImage *icon = [UIImage imageNamed:@"61-brightness.png"];
+		NSLog(@"Icon Size:%f,%f", icon.size.width, icon.size.height);
+		[torchButton setImage:icon forState:UIControlStateNormal];
+//		torchButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+//		torchButton.titleLabel.backgroundColor = [UIColor clearColor];
 		torchButton.alpha = 0.4;
 		[torchButton addTarget:self action:@selector(toggleLight:) forControlEvents:UIControlEventTouchDown];
-		torchButton.frame = CGRectMake(controls.frame.size.width - bWidth, 0, bWidth, bHeight);
+		float leftEdge = bWidth + bInset;
+		torchButton.frame = CGRectMake(leftEdge, cancelButton.frame.origin.y, 
+									   controls.frame.size.width - 2 * (bWidth + bInset), 
+										cancelButton.frame.size.height );
 		[controls addSubview:torchButton];
 	}
+	
+	
 	
 	[self.view addSubview:controls];
 
