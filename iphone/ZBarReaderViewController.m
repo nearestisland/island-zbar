@@ -134,7 +134,7 @@ showsHelpOnFail, cameraMode, takesPicture, maxScanDimension;
 	[keyboardButton addTarget:self action:@selector(openKeyboard:) forControlEvents:UIControlEventTouchDown];
 	keyboardButton.frame = CGRectMake(controls.frame.size.width - bWidth, 0, bWidth, bHeight);
 	[controls addSubview:keyboardButton];
-	
+#ifndef TARGET_IPHONE_SIMULATOR
 	if (NSClassFromString(@"AVCaptureSession")) {
 		
 		AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -158,8 +158,8 @@ showsHelpOnFail, cameraMode, takesPicture, maxScanDimension;
 			[controls addSubview:torchButton];
 		}
 	}	
-	
-	
+#endif	
+
 	[self.view addSubview:controls];
 	
 	/*	
